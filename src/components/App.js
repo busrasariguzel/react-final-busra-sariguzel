@@ -8,10 +8,8 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
-            beers: []
-
+            beers: [],
         };
-        
     }
 
     getBeers = () => {
@@ -30,30 +28,22 @@ class App extends Component {
     
     }
     componentDidMount(){
-
-        this.getBeers();
-        
+    this.getBeers();
     }
 
 render(){
     return (
 <div>
-    <Header />
+<Header />
 <Beers beers ={this.state.beers}/>
-
-
-
 </div>
-
-
     )
 }
 
 }
+
 App.propTypes = {
     beers: PropTypes.array,
-    
-    
 }
 
 
