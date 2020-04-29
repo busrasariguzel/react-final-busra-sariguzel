@@ -12,7 +12,7 @@ class BeerItem extends Component {
 
     render(){
         return (
-            <div style={{paddingLeft : '15%'}} >
+            <div style={{paddingLeft : '12%'}} >
                 <br></br>
                 <div >
                 <h2>{this.props.item.name}</h2>

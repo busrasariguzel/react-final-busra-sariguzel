@@ -3,7 +3,7 @@ import React , {Component} from 'react';
 class Header extends Component{
 render(){
     return (
-    <h1 style={{background:'lightPink', height:'70px', textAlign:'center'}}> Busra Sariguzel React Final</h1>
+    <h1 style={{background:'Beige', height:'70px', textAlign:'center'}}> Busra Sariguzel React Final</h1>
     )}
 
 
