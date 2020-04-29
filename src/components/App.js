@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import Beers from './Beers'
 
@@ -49,7 +50,11 @@ render(){
 }
 
 }
-
+App.propTypes = {
+    beers: PropTypes.array,
+    
+    
+}
 
 
 export default App

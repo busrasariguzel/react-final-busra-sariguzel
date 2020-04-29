@@ -3,18 +3,15 @@ import React, {Component} from 'react';
 class BeerItem extends Component {
     constructor(props){
         super()
-        this.state = {
-        
-
-        };
         
     }
 
     render(){
         return (
-            <div style={{paddingLeft : '12%'}} >
+            <div style={{paddingLeft : '12%'}} key={this.props.item.id}>
+                
+                <div>
                 <br></br>
-                <div >
                 <h2>{this.props.item.name}</h2>
                 </div><br />
                 <div style={{display:'flex', flexDirection:'row' , justifyContent:'left'}}>
@@ -30,14 +27,12 @@ class BeerItem extends Component {
 .map((item,idx)=>{
     return (
         <div>
-            {/* <ul> */}
-                <li>{item}</li>
-            {/* </ul> */}
-            </div>
+        <li>{item}</li>
+        </div>
 
     )
 })}
-    </ul></div>
+    </ul></div><br></br>
 
             </div>
         )
