@@ -12,18 +12,21 @@ class BeerItem extends Component {
 
     render(){
         return (
-            <div style={{paddingLeft : '15%'}}>
-        
-                <h3>{this.props.item.name}</h3>
-                <div>
-                <p style={{fontWeight:'bold'}}> Description : </p> 
-                <p>{this.props.item.description}</p>
-                </div>
-                <div>
-                <p style={{fontWeight:'bold'}}>Tips : </p><p>  {this.props.item.brewers_tips}</p>
-                </div>
-                <div>
-                <p style={{fontWeight:'bold'}}>Pair with : </p><p> {this.props.item.food_pairing
+            <div style={{paddingLeft : '15%'}} key={this.props.idx}>
+                <br></br>
+                <div >
+                <h2>{this.props.item.name}</h2>
+                </div><br />
+                <div style={{display:'flex', flexDirection:'row' , justifyContent:'left'}}>
+                <h4 style={{fontWeight:'bold'}}> Description:  </h4> &nbsp;&nbsp;
+                <p>  {this.props.item.description}</p>
+                </div><br />
+                <div style={{display:'flex', flexDirection:'row' , justifyContent:'left'}}>
+                <h4 style={{fontWeight:'bold'}}>Tips: </h4> &nbsp; &nbsp;
+                <p>  {this.props.item.brewers_tips}</p>
+                </div><br />
+                <div >
+                <h4 style={{fontWeight:'bold'}}>Pair with: </h4><p> {this.props.item.food_pairing
 .map((item,idx)=>{
     return (
         <div>
@@ -35,7 +38,7 @@ class BeerItem extends Component {
     )
 })}
     </p></div>
-    <hr  />
+
             </div>
         )
     }

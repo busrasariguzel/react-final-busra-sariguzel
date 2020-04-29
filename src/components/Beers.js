@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import BeerItem from './BeerItem';
 import BeerImage from './BeerImage';
+import PropTypes from 'prop-types'
 
 class Beers extends Component {
     constructor(props){
         super()
-        this.state = {
-        
-
-        };
         
     }
 
@@ -19,11 +16,12 @@ class Beers extends Component {
 .map((item,idx)=>{
     
                 return (
+                    <div>
                     <div 
                     style={{
                         display:'flex',
                         flexDirection:'row',
-                        justifyContent: 'space-evenly'
+                        
         
                     }}
                     key={idx}>
@@ -34,7 +32,8 @@ class Beers extends Component {
                     
 
                     </div>
-                    
+                    <hr></hr>
+                    </div>
                     
                 )
             }
@@ -45,5 +44,9 @@ class Beers extends Component {
         )
     }
 }
-
+Beers.propTypes = {
+    beers: PropTypes.array,
+    
+    
+}
 export default Beers
