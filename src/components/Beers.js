@@ -16,7 +16,7 @@ class Beers extends Component {
 .map((item,idx)=>{
     
                 return (
-                    <div>
+                    <div key={idx}>
                     <div 
                     style={{
                         display:'flex',

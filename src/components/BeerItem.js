@@ -12,7 +12,7 @@ class BeerItem extends Component {
 
     render(){
         return (
-            <div style={{paddingLeft : '15%'}} key={this.props.idx}>
+            <div style={{paddingLeft : '15%'}} >
                 <br></br>
                 <div >
                 <h2>{this.props.item.name}</h2>
@@ -26,18 +26,18 @@ class BeerItem extends Component {
                 <p>  {this.props.item.brewers_tips}</p>
                 </div><br />
                 <div >
-                <h4 style={{fontWeight:'bold'}}>Pair with: </h4><p> {this.props.item.food_pairing
+                <h4 style={{fontWeight:'bold'}}>Pair with: </h4><ul> {this.props.item.food_pairing
 .map((item,idx)=>{
     return (
         <div>
-            <ul>
+            {/* <ul> */}
                 <li>{item}</li>
-            </ul>
+            {/* </ul> */}
             </div>
 
     )
 })}
-    </p></div>
+    </ul></div>
 
             </div>
         )

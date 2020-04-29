@@ -17,7 +17,7 @@ class BeerImage extends Component {
                 alignItems: 'center',
                 textAlign: 'center',
                 padding:'5%'
-            }}>
+            }} key={this.props.idx}>
                     <img src={this.props.item.image_url} height="140px" width='60px' />
             </div>
         )
